@@ -19,7 +19,7 @@ public class StudentController {
 
 	public StudentController(StudentService studentService) {
 		super();
-		this.studentService = studentService;
+ 		this.studentService = studentService;
 	}
 	
 	//handler method to handle list students and return model and view
