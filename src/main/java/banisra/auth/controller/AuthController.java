@@ -27,7 +27,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/user")
 public class AuthController {
 
 
@@ -70,7 +70,7 @@ public class AuthController {
     }
 
 
-    @PostMapping("/signup")
+    @PostMapping("/register")
 
 
     public ResponseEntity<?> signupUser(@RequestBody SignupRequest signupRequest) {
@@ -84,7 +84,7 @@ public class AuthController {
 
     }
 
-    @PostMapping("/login")
+    @PostMapping("/fetch")
     public AuthenticationResponse createdAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest,
                                                              HttpServletResponse response) throws IOException {
 
